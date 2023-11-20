@@ -8,6 +8,7 @@ banner:
   button-url:
   button-text:
 about-image: 'https://picsum.photos/id/1020/600/400'
+travel-image: 'https://picsum.photos/id/1080/600/400'
 seo:
   title: Travel magazine
   description: "your description goes here"
@@ -18,6 +19,7 @@ seo:
 
 <!--------------------------- Fascinating section --------------------------->
 <section class="p-5p bg-stone-200">
+  <!------ This is our max width div ------>
   <div class="max-w-screen-2xl grid grid-cols-2">
     <div class="bg-cover bg-center pb-120p" style="background-image: url('{{page.about-image}}');"></div>
     <div class="p-5p self-center">
@@ -32,3 +34,4 @@ seo:
 {% include upcoming-travel.html %}
 
 <!--------------------------- Scroll recently blog post --------------------------->
+{% include post-loop-item.html %}
