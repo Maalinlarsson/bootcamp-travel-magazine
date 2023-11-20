@@ -7,7 +7,7 @@
         <!------ This is grid div ------>
         <div class="grid grid-cols-2 gap-8">
             <div>
-                {% for item in site.data.travel-dates offset: 0 %}
+                {% for item in site.data.travel-dates offset: 1 %}
                 <div class="flex justify-between border-t-2 last:border-b-2 py-8">
                     <h4 class="m-0"> {{item.destination}} </h4>
                     <p class="m-0"> {{item.date}} </p>

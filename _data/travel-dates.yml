@@ -1,6 +1,9 @@
+- destination: Tuscany
+  date: 00 Month - 00 Month 2023
+  image: /images/blog-bg-14.jpg
 - destination: Europe
   date: 00 Month - 00 Month 2023
-  image: /images/blog-bg-12.jpg
+  image: /images/blog-bg-13.jpg
 - destination: Australia
   date: 00 Month - 00 Month 2023
   image: /images/blog-bg-14.jpg
