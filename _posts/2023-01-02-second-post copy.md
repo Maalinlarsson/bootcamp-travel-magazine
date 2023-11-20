@@ -2,7 +2,7 @@
 layout: post-with-sidebar
 title: Second Blog Post 
 description: "This is a short description of the second blog post"
-featured-image: 'images/blog-bg-10.jpg'
+featured-image: 'images/blog-bg-9.jpg'
 author: Your Name
 banner:
   banner-image: '/images/blog-bg-10.jpg'

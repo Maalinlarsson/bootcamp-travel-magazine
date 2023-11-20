@@ -1,15 +1,38 @@
 ---
 layout: default
+banner:
+  banner-image: '/images/blog-bg-10.jpg'
+  top-text:
+  big-text: Exploring Sumbawa.
+  description: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
+  button-url: /2023/01/03/third-post.html
+  button-text: READ MORE
+  button-color: '#000'
+travel-image: '/images/blog-bg-14.jpg'
+seo:
+  title: Travel magazine
+  description: "your description goes here"
+  keywords: "your, keywords, go, here"
+  social_image: "path/to/social/image.jpg"
+  hide-from-google: false
 ---
 
-<p class="bg-violet-400"> This is some text on the blog page </p> 
+<!--------------------------- Recently on the blog --------------------------->
+<section class="p-5p">
+   <!------ This is our max width div ------>
+   <div class="max-w-screen-2xl">
+    <h3 class="text-center uppercase text-4xl m-0 px-5p pb-5p"> Recently on the blog. </h3>
 
-<section class="p-8 grid grid-cols-4 gap-5">
+    <div class="columns-3">
+      {% for item in site.posts %}
+          <div class="break-inside-avoid">
+            <img src="{{item.featured-image}}" alt="">
+              <h4 class="uppercase m-4"> {{item.title}} </h4>
+              <p class="m-4"> {{item.description }} </p>
+              <a href="{{item.url}}" class="uppercase border-b border-black inline-block m-4 mt-0">  Read More </a>  
+          </div>
+          {% endfor %}
+      </div>
 
-	{% for post in site.posts %}
-	
-		{% include post-loop-item.html %}
-	
-	{% endfor %}
-
-</section> 
+   </div>
+</section>

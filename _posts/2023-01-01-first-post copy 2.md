@@ -1,8 +1,8 @@
 ---
-layout: post-with-sidebar
-title: Second Blog Post 
-description: "This is a short description of the second blog post"
-featured-image: 'images/blog-bg-10.jpg'
+layout: post
+title: First Blog Post 
+description: "This is a short description of the first blog post"
+featured-image: '/images/blog-bg-15.jpg'
 author: Your Name
 banner:
   banner-image: '/images/blog-bg-10.jpg'
@@ -19,7 +19,7 @@ seo:
   social_image: "path/to/social/image.jpg"
   hide-from-google: false
 ---
+
 ## This is a heading in our blog post 
 
 This  is a paragraph in our blog post lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus debitis esse cum neque laborum iure sed architecto adipisci maxime quo minus blanditiis exercitationem, sit incidunt dolor similique animi porro.
-

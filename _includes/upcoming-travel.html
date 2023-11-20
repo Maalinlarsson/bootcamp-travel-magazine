@@ -7,7 +7,7 @@
         <!------ This is grid div ------>
         <div class="grid grid-cols-2 gap-8">
             <div>
-                {% for item in site.data.travel-dates %}
+                {% for item in site.data.travel-dates offset: 0 %}
                 <div class="flex justify-between border-t-2 last:border-b-2 py-8">
                     <h4 class="m-0"> {{item.destination}} </h4>
                     <p class="m-0"> {{item.date}} </p>
@@ -15,8 +15,8 @@
                 {% endfor %}
             </div>
 
-            <div class="bg-cover bg-center p-5p pl-0 flex items-end" style="background-image: url('{{page.travel-image}}');">
-                <h3 class="bg-stone-200 p-2 pr-4 text-4xl editable"> Currently in Tuscany </h3>
+            <div class="bg-cover bg-center p-5p pl-0 flex items-end" style="background-image: url('{{site.data.travel-dates[0].image}}');">
+                <h3 class="bg-stone-200 p-2 pr-4 text-4xl editable"> Currently in {{site.data.travel-dates[0].destination}} </h3>
             </div>
         </div>
     </div>

@@ -1,8 +1,12 @@
 - destination: Europe
   date: 00 Month - 00 Month 2023
+  image: /images/blog-bg-12.jpg
 - destination: Australia
   date: 00 Month - 00 Month 2023
+  image: /images/blog-bg-14.jpg
 - destination: Asia
   date: 00 Month - 00 Month 2023
+  image: /images/blog-bg-4.jpg
 - destination: Europe
   date: 00 Month - 00 Month 2023
+  image: /images/blog-bg-6.jpg
