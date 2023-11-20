@@ -1,11 +1,32 @@
 ---
 layout: default
+banner:
+  banner-image: 'https://picsum.photos/id/1020/600/400'
+  top-text:
+  big-text: A whole new world
+  description: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
+  button-url:
+  button-text:
+about-image: 'https://picsum.photos/id/1020/600/400'
 seo:
-  title: Travel Magazine
-  description: "Your description goes here"
+  title: Travel magazine
+  description: "your description goes here"
   keywords: "your, keywords, go, here"
   social_image: "path/to/social/image.jpg"
   hide-from-google: false
 ---
 
-<p class="bg-yellow-400"> This is some text on the homepage </p> 
+<!--------------------------- Fascinating section --------------------------->
+<section class="p-5p">
+  <div class="max-w-screen-2xl grid grid-cols-2">
+    <div class="bg-cover bg-center pb-120p" style="background-image: url('{{page.about-image}}');"></div>
+    <div class="p-5p self-center">
+      <h2 class="editable text-6xl max-w-md"> A fascinating heading about the site. </h2>
+      <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <a href="" class="editable uppercase border-b border-black mt-5 inline-block"> Read more </a>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- Upcoming travel section --------------------------->
+{% include upcoming-travel.html %}

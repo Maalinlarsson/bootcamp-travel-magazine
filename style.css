@@ -1,11 +1,9 @@
-/* ----------- Import Tailwind -----*/
+/*--------------------------- Import tailwind ---------------------------*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-/* ----------- Default Styles to apply to the whole project  --------- */
-
+/*--------------------------- Default styles to apply to the whole project ---------------------------*/
 @layer base {
 
     h1, h2, h3, h4  {
@@ -35,9 +33,7 @@
 
   }
 
-
-/* ----------- ADDITIONAL COMPONENTS  --------- */
-
+/*--------------------------- Additional components ---------------------------*/
 @layer components {
 
     .tag {

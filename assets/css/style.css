@@ -1,5 +1,5 @@
-/* ----------- Import Tailwind -----*/
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com*/
+/*--------------------------- Import tailwind ---------------------------*/
+/*! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com*/
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -444,6 +444,19 @@ p {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.button {
+  display: inline-block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .absolute {
   position: absolute;
 }
@@ -456,6 +469,22 @@ p {
 .m-4 {
   margin: 1rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
 .grid {
   display: grid;
 }
@@ -465,18 +494,70 @@ p {
 .h-full {
   height: 100%;
 }
+.min-h-70 {
+  min-height: 70vh;
+}
 .w-96 {
   width: 24rem;
 }
 .w-full {
   width: 100%;
 }
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+.max-w-screen-2xl {
+  max-width: 1536px;
+}
+.max-w-md {
+  max-width: 28rem;
+}
 .shrink-0 {
   flex-shrink: 0;
 }
-.bg-yellow-400 {
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-5 {
+  gap: 1.25rem;
+}
+.self-center {
+  align-self: center;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.bg-blue-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 .bg-stone-100 {
   --tw-bg-opacity: 1;
@@ -490,29 +571,78 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(214 211 209 / var(--tw-bg-opacity));
 }
+.bg-teal-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+}
+.bg-violet-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 139 250 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
+}
+.bg-center {
+  background-position: center;
 }
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.p-8 {
-  padding: 2rem;
-}
-.p-4 {
-  padding: 1rem;
+.p-15p {
+  padding: 15%;
 }
 .p-2 {
   padding: 0.5rem;
 }
+.p-4 {
+  padding: 1rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-5p {
+  padding: 5%;
+}
+.p-8 {
+  padding: 2rem;
+}
+.pb-100p {
+  padding-bottom: 100%;
+}
+.pb-120p {
+  padding-bottom: 120%;
+}
+.font-serif {
+  font-family: Italiana, serif;
+}
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 
+/*--------------------------- Default styles to apply to the whole project ---------------------------*/
 
-/* ----------- Default Styles to apply to the whole project  --------- */
-
-
-/* ----------- ADDITIONAL COMPONENTS  --------- */
-
+/*--------------------------- Additional components ---------------------------*/
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
