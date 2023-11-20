@@ -6,7 +6,11 @@ banner:
   top-text: SHOP OUR
   big-text: Curated Collection.
   description: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
-travel-image: '/images/blog-bg-14.jpg'
+block-image:
+  image: /images/blog-bg-8.jpg
+  position: 50% 50%
+  text: Once you get a taste for travel you'll never be the same
+
 seo:
   title: Travel magazine
   description: "your description goes here"
@@ -14,7 +18,7 @@ seo:
   social_image: "path/to/social/image.jpg"
   hide-from-google: false
 ---
-
+<!--------------------------- This is for the travel guide loop --------------------------->
 <section class="p-5p bg-stone-200">
     <div class="max-w-screen-2xl p-5p">
         <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Travel Guides </h3>
@@ -35,4 +39,30 @@ seo:
       </div>
 
     </div>
+</section>
+
+<!--------------------------- This is the big banner image --------------------------->
+{% include big-banner-image.html %}
+
+<!--------------------------- This is for the presets loop --------------------------->
+<section class="p-5p bg-stone-200">
+  <div class="max-w-screen-2xl p-5p pt-0">
+      <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Lightroom Presets </h3>
+
+      <div class="grid grid-cols-3 gap-4">
+        {% for item in site.products-presets %}
+        <div class="bg-white">
+          <a href="#">
+            <div class="bg-cover bg-center min-h-[30vw]" style="background-image: url('{{item.featured-image}}');"></div>
+            <div class="p-5">
+              <h4 class="uppercase mb-5"> {{item.title}} </h4>
+              <p class="mb-5"> {{item.description }} </p>
+              <span class=""> $ {{item.price}} </span> 
+          </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
 </section>

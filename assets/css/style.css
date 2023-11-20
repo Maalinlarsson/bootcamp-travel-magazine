@@ -478,6 +478,9 @@ p {
 .grid {
   display: grid;
 }
+.max-h-20 {
+  max-height: 5rem;
+}
 .min-h-70 {
   min-height: 70vh;
 }
@@ -495,6 +498,9 @@ p {
 }
 .min-h-\[30vw\] {
   min-height: 30vw;
+}
+.min-h-50 {
+  min-height: 50vh;
 }
 .w-96 {
   width: 24rem;
@@ -652,6 +658,9 @@ p {
 .pr-4 {
   padding-right: 1rem;
 }
+.pt-0 {
+  padding-top: 0px;
+}
 .text-center {
   text-align: center;
 }
@@ -665,6 +674,14 @@ p {
 }
 .text-9xl {
   font-size: 8rem;
+  line-height: 1;
+}
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 .uppercase {
