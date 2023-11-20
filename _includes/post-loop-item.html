@@ -1,18 +1,20 @@
 
-<section class="p-5p bg-stone-200">
+<section class="py-5p px-2 bg-stone-200">
 
     <!------ This is our max width div ------>
     <div class="max-w-screen-2xl">
         <h3 class="text-center uppercase pb-8 text-4xl editable"> Recently on the blog... </h3>
         
+        <div class="grid grid-cols-4 gap-3">
         {% for item in site.posts %}
-        <div>
-            <div class="bg-cover bg-center" style="background-image: url('{{item.featured_image}}');">
-            <h4 class="uppercase"> {{item.title}} </h4>
-            <p> {{item.description }} </p>
-            <a href="{{item.url}}" class="uppercase border-b border-black mt-2 inline-block">  Read More </a>  
+            <div class="{% cycle 'col-span-1','col-span-2' %}">
+                <div class="bg-cover bg-center min-h-[20vw]" style="background-image: url('{{item.featured_image}}');"></div>
+                <h4 class="uppercase m-4"> {{item.title}} </h4>
+                <p class="m-4"> {{item.description }} </p>
+                <a href="{{item.url}}" class="uppercase border-b border-black mt-2 inline-block m-4">  Read More </a>  
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
 
 
     </div>
