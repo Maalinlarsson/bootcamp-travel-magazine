@@ -456,24 +456,18 @@ p {
 .m-4 {
   margin: 1rem;
 }
-.m-5 {
-  margin: 1.25rem;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
-.mt-2 {
-  margin-top: 0.5rem;
+.mt-0 {
+  margin-top: 0px;
 }
 .mt-5 {
   margin-top: 1.25rem;
 }
-.mb-0 {
-  margin-bottom: 0px;
-}
-.mt-0 {
-  margin-top: 0px;
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 .inline-block {
   display: inline-block;
@@ -489,6 +483,18 @@ p {
 }
 .min-h-\[20vw\] {
   min-height: 20vw;
+}
+.min-h-\[40vw\] {
+  min-height: 40vw;
+}
+.min-h-\[35vw\] {
+  min-height: 35vw;
+}
+.min-h-\[33vw\] {
+  min-height: 33vw;
+}
+.min-h-\[30vw\] {
+  min-height: 30vw;
 }
 .w-96 {
   width: 24rem;
@@ -519,14 +525,14 @@ p {
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .items-end {
   align-items: flex-end;
 }
 .items-center {
   align-items: center;
-}
-.justify-center {
-  justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
@@ -587,9 +593,9 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(214 211 209 / var(--tw-bg-opacity));
 }
-.bg-teal-700 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-cover {
   background-size: cover;
@@ -619,6 +625,10 @@ p {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .py-5p {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -627,12 +637,11 @@ p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.px-5p {
-  padding-left: 5%;
-  padding-right: 5%;
-}
 .pb-120p {
   padding-bottom: 120%;
+}
+.pb-5p {
+  padding-bottom: 5%;
 }
 .pb-8 {
   padding-bottom: 2rem;
@@ -643,23 +652,8 @@ p {
 .pr-4 {
   padding-right: 1rem;
 }
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-.pt-0 {
-  padding-top: 0px;
-}
-.pr-5p {
-  padding-right: 5%;
-}
-.pb-5p {
-  padding-bottom: 5%;
-}
 .text-center {
   text-align: center;
-}
-.font-serif {
-  font-family: Italiana, serif;
 }
 .text-4xl {
   font-size: 2.25rem;
