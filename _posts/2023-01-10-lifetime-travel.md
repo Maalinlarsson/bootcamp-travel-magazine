@@ -2,7 +2,7 @@
 layout: post-with-sidebar
 title: Lifetime travel
 description: "This is a short description of the second blog post"
-featured-image: 'images/blog-bg-6.jpg'
+featured-image: '/images/blog-bg-6.jpg'
 author: Larsson's
 banner:
   banner-image: '/images/blog-bg-6.jpg'

@@ -2,12 +2,12 @@
 layout: post
 title: Warmer weather
 description: "This is a short description of the third blog post"
-featured-image: 'images/blog-bg-7.jpg'
+featured-image: '/images/blog-bg-7.jpg'
 author: Malin
 banner:
   banner-image: '/images/blog-bg-7.jpg'
   top-text:
-  big-text: Exploring Sumbawa.
+  big-text: Need the sun.
   description: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
 seo: 
   title: "This should appear in the browser tab"

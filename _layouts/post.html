@@ -1,24 +1,23 @@
 ---
 layout: default
-seo:
-  title: Travel magazine
-  description: "your description goes here"
-  keywords: "your, keywords, go, here"
-  social_image: "path/to/social/image.jpg"
-  hide-from-google: false
 ---
 <!--------------------------- This is the section --------------------------->
-<section>
-	<h1> {{page.title}} </h1>
-	<p> By {{page.author}} </p>
+<section class="p-5 border-b border-black">
+  <div class="max-w-screen-2xl">
+    <div class="flex justify-between text-center items-center">
+      <p class="m-0"> By {{page.author}} </p>
+      <h1 class="m-0"> {{page.title}} </h1>
+      <p class="m-0"> {{page.date | date_to_long_string}} </p>
+    </div>
+  </div>
 </section>
 
 <!--------------------------- This is the main content section --------------------------->
-<section>
+<section class="p-5p text-center">
 	{{ content }}
 </section>
 
 <!--------------------------- This is a placeholder section to later add the related posts --------------------------->
-<!-- <section class="p-8 bg-stone-200"> 
- 	<p> Add related posts include here later </p>
-</section> -->
+<section class=""> 
+
+</section>
