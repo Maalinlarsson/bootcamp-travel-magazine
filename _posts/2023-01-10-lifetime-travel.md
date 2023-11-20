@@ -1,17 +1,14 @@
 ---
 layout: post-with-sidebar
-title: Second Blog Post 
+title: Lifetime travel
 description: "This is a short description of the second blog post"
-featured-image: 'images/blog-bg-5.jpg'
-author: Your Name
+featured-image: 'images/blog-bg-6.jpg'
+author: Larsson's
 banner:
-  banner-image: '/images/blog-bg-10.jpg'
+  banner-image: '/images/blog-bg-6.jpg'
   top-text:
-  big-text: Exploring Sumbawa.
+  big-text: Exploring the world.
   description: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
-  button-url: 
-  button-text: 
-  button-color:
 seo: 
   title: "This should appear in the browser tab"
   description: "A meaningful description for SEO"

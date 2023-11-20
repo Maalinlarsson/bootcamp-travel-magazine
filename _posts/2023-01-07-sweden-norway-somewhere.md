@@ -1,17 +1,14 @@
 ---
 layout: post
-title: Third Blog Post 
+title: Sweden, Norway or somewhere else? 
 description: "This is a short description of the third blog post"
-featured-image: 'images/blog-bg-12.jpg'
-author: Your Name
+featured-image: 'images/blog-bg-5.jpg'
+author: Malin
 banner:
-  banner-image: '/images/blog-bg-10.jpg'
+  banner-image: '/images/blog-bg-5.jpg'
   top-text:
   big-text: Exploring Sumbawa.
   description: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
-  button-url: 
-  button-text: 
-  button-color:
 seo: 
   title: "This should appear in the browser tab"
   description: "A meaningful description for SEO"
