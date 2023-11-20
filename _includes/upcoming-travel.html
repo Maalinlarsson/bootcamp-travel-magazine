@@ -2,12 +2,21 @@
 
     <!------ This is our max width div ------>
     <div class="max-w-screen-2xl">
-        <h2 class="editable"> Upcoming travel destinations </h2>
+        <h2 class="text-center uppercase pb-8 text-4xl editable"> Upcoming travel destinations </h2>
 
         <!------ This is grid div ------>
-        <div class="grid grid-cols-2">
-            <div></div>
-            <div class="bg-cover bg-center" style="background-image: url('{{page.about-image}}');"></div>
+        <div class="grid grid-cols-2 gap-8">
+            <div class="">
+                {% for item in site.data.travel-dates %}
+                <div class="flex justify-between border-t-2 last:border-b-2 py-4">
+                    <h2 class="m-0"> {{item.destination}} </h2>
+                    <p class="m-0"> {{item.date}} </p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="bg-cover bg-center p-5p pl-0 flex items-end" style="background-image: url('{{page.about-image}}');">
+                <h3 class="bg-stone-200 p-2 pr-4 text-4xl editable"> Currently in Tuscany </h3>
+            </div>
         </div>
     </div>
     
