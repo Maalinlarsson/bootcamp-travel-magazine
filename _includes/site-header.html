@@ -3,6 +3,7 @@
     <div  class="uppercase flex justify-between max-w-screen-2xl mx-auto p-5">
         <a href="/index.html"> Logo </a>
         <nav class="flex gap-4">
+            <a href="/index.html"> Home </a>
             <a href="/blog.html"> Blog </a>
             <a href="/shop.html"> Shop </a>
             <a href="/member-login.html"> Members-login </a>
@@ -14,7 +15,7 @@
 <section class="min-h-70 bg-cover bg-center p-15p text-white" style="background-image: url('{{ page.banner.banner-image }}'); background-position:{{ page.banner.banner-position }}"> 
     <div class="max-w-screen-2xl mx-auto">
         {% if page.banner.banner-image %}
-        <span> {{ page.banner.top-text }} </span>
+        <span class="uppercase"> {{ page.banner.top-text }} </span>
         {% endif %}
 
         <h1 class="text-9xl"> {{ page.banner.big-text }} </h1>

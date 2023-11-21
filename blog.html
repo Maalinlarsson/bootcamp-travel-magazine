@@ -26,10 +26,10 @@ seo:
     <div class="columns-3">
       {% for item in site.posts %}
           <div class="break-inside-avoid">
-            <img src="{{item.featured-image}}" alt="">
+            <img src="{{ item.featured-image }}" alt="">
               <h4 class="uppercase m-4"> {{item.title}} </h4>
               <p class="m-4"> {{item.description }} </p>
-              <a href="{{item.url}}" class="uppercase border-b border-black inline-block m-4 mt-0">  Read More </a>  
+              <a href="{{ item.url }}" class="uppercase border-b border-black inline-block m-4 mt-0">  Read More </a>  
           </div>
           {% endfor %}
       </div>

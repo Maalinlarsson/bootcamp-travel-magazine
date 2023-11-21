@@ -512,6 +512,9 @@ p {
 .mt-\[1rem\] {
   margin-top: 1rem;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .inline-block {
   display: inline-block;
 }
@@ -526,6 +529,21 @@ p {
 }
 .aspect-video {
   aspect-ratio: 16 / 9;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+.aspect-portrait {
+  aspect-ratio: 3 / 4;
+}
+.aspect-portrait-tall {
+  aspect-ratio: 3 / 5;
+}
+.aspect-landscape {
+  aspect-ratio: 2 / 1 ;
+}
+.aspect-\[30vw\] {
+  aspect-ratio: 30vw;
 }
 .min-h-60 {
   min-height: 60vh;
@@ -796,6 +814,10 @@ p {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .uppercase {
   text-transform: uppercase;

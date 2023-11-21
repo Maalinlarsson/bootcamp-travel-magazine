@@ -9,7 +9,7 @@
             <div class="{% cycle 'col-span-1','col-span-2' %}">
                 <div class="bg-cover bg-center min-h-[20vw]" style="background-image: url('{{ item.featured-image }}');"></div>
                 <h4 class="uppercase m-4"> {{ item.title }} </h4>
-                <p class="m-4"> {{item.description }} </p>
+                <p class="m-4"> {{ item.description }} </p>
                 <a href="{{ item.url }}" class="uppercase border-b border-black inline-block m-4 mt-0">  Read More </a>  
             </div>
             {% endfor %}
