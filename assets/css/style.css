@@ -518,6 +518,9 @@ p {
 .grid {
   display: grid;
 }
+.contents {
+  display: contents;
+}
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
@@ -695,6 +698,9 @@ p {
 }
 .p-8 {
   padding: 2rem;
+}
+.p-10p {
+  padding: 10%;
 }
 .px-2 {
   padding-left: 0.5rem;

@@ -1,0 +1,29 @@
+<section class="p-10p">
+    <!------ This is our max width div ------>
+    <div class="max-w-screen-2xl">
+        <h3 class="text-center uppercase pb-8 text-4xl editable"> {{page.upcoming-travel.title}} </h3>
+
+        <!------ This is grid div ------>
+        <div class="grid grid-cols-2">
+            <div>
+                <h3 class="text-4xl uppercase">{{ page.table-title }} </h3>
+
+                {% for item in page.chapters %}
+                <div class="flex justify-between border-t-2 last:border-b-2 py-8">
+                    <h4 class="m-0"> {{ item.title }} </h4>
+                    <p class="m-0"> {{ item.page-numbers }} </p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="mx-auto">
+                <h3 class="text-4xl uppercase">{{ page.list-title }} </h3>
+                <ul>
+                {% for item in page.list %}
+                    <li> {{ item.text }} </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
