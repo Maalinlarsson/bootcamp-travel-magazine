@@ -3,12 +3,12 @@ layout: default
 banner:
   banner-image: '/images/blog-bg-17.jpg'
   banner-position: 2% 100%
-  top-text:
-  big-text: Shop.
+  top-text: SHOP OUR
+  big-text: Curated Collection.
   description: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
-  button-url: /shop-featured.html
-  button-text: FEATURED SHOP
-  button-color:
+  button-url: /shop.html
+  button-text: VISIT THE SHOP
+  button-color: 
 block-image:
   image: /images/blog-bg-8.jpg
   position: 50% 50%
@@ -23,16 +23,28 @@ seo:
 <!--------------------------- This is for the travel guide loop --------------------------->
 <section class="p-5p bg-stone-200">
     <div class="max-w-screen-2xl p-5p py-0">
-      <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Explore all our products </h3>
+        <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Travel Guides </h3>
 
         <div class="grid grid-cols-3 gap-6">
-          {% for item in site.products-guides %}
+          {% for item in site.products-guides | limit:3 %}
             {% include guide-loop.html %}
           {% endfor %}
+        </div>
+    </div>
+</section>
 
-        {% for item in site.products-presets %}
+<!--------------------------- This is the big banner image --------------------------->
+{% include big-banner-image.html %}
+
+<!--------------------------- This is for the presets loop --------------------------->
+<section class="p-5p bg-stone-200">
+  <div class="max-w-screen-2xl p-5p pt-0">
+      <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Lightroom Presets </h3>
+
+      <div class="grid grid-cols-3 gap-6">
+        {% for item in site.products-presets | limit:3 %}
           {% include preset-loop.html %}
         {% endfor %}
-    </div>
+      </div>
   </div>
 </section>
