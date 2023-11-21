@@ -24,15 +24,31 @@ seo:
 <section class="p-5p bg-stone-200">
     <div class="max-w-screen-2xl p-5p py-0">
       <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Explore all our products </h3>
+      <div class="flex flex-cols-3 justify-center gap-4 pb-5p">
+        <p class="border border-white px-8 py-2 hover:bg-stone-400 hover:text-stone-200"> Show all</p>
+        <p class="border border-white px-8 py-2 hover:bg-stone-400 hover:text-stone-200"> Travel guides </p>
+        <p class="border border-white px-8 py-2 hover:bg-stone-400 hover:text-stone-200"> Lightroom presets </p>
+      </div>
 
-        <div class="grid grid-cols-3 gap-6">
-          {% for item in site.products-guides %}
-            {% include guide-loop.html %}
-          {% endfor %}
+      <div class="grid grid-cols-3 gap-6">
+        {% for item in site.products-guides %}
+          {% include guide-loop.html %}
+        {% endfor %}
 
         {% for item in site.products-presets %}
           {% include preset-loop.html %}
         {% endfor %}
-    </div>
+      </div>
   </div>
 </section>
+
+<!--------------------------- You use this way if you are just using one products include instead of making seperate includes for all the categorys --------------------------->
+      
+        <!-- {% for item in site.products-guides %}
+          {% include products.html type="guides" %}
+        {% endfor %}
+
+      {% for item in site.products-presets %}
+        {% include products.html type="presets" %}
+      {% endfor %} -->
+

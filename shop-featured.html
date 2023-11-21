@@ -26,7 +26,7 @@ seo:
         <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Travel Guides </h3>
 
         <div class="grid grid-cols-3 gap-6">
-          {% for item in site.products-guides | limit:3 %}
+          {% for item in site.products-guides limit:3 %}
             {% include guide-loop.html %}
           {% endfor %}
         </div>
@@ -42,7 +42,7 @@ seo:
       <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Lightroom Presets </h3>
 
       <div class="grid grid-cols-3 gap-6">
-        {% for item in site.products-presets | limit:3 %}
+        {% for item in site.products-presets limit:3 %}
           {% include preset-loop.html %}
         {% endfor %}
       </div>
