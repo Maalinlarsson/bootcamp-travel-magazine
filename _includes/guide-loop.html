@@ -1,22 +1,22 @@
 <div class="bg-white">
-    <a href="{{item.url}}">
-      <div class="bg-cover bg-center min-h-[30vw] relative" style="background-image: url('{{item.featured-image}}');">
+    <a href="{{ item.url }}">
+      <div class="bg-cover bg-center min-h-[30vw] relative" style="background-image: url('{{ item.featured-image }}');">
 
         {% if item.tag %}
-        <h3 class="bg-black text-white text-xl uppercase px-6 py-1 inline-block absolute top-2 -right-3 editable"> {{item.tag}} </h3>
+        <h3 class="bg-black text-white text-xl uppercase px-6 py-1 inline-block absolute top-2 -right-3 editable"> {{ item.tag }} </h3>
         {% endif %}
 
       </div>
       <div class="p-5">
         <span class="bg-stone-200 text-stone-400 inline-block px-2 py-1 mb-2"> Guides </span>
-        <h4 class="uppercase mb-5"> {{item.title}} </h4>
-        <p class="mb-5"> {{item.description }} </p>
+        <h4 class="uppercase mb-5"> {{ item.title }} </h4>
+        <p class="mb-5"> {{ item.description }} </p>
         {% assign cent-check = item.price | modulo: 100 %}
         <span class=""> 
             {% if cent-check > 1 %}
-            $ {{item.price | divided_by: 100.0}} 
+            $ {{ item.price | divided_by: 100.0}} 
             {% else %}
-            $ {{item.price | divided_by: 100}} 
+            $ {{ item.price | divided_by: 100}} 
             {% endif %}
         </span> 
          

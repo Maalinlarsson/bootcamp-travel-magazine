@@ -484,6 +484,9 @@ p {
 .m-\[1rem\] {
   margin: 1rem;
 }
+.m-2 {
+  margin: 0.5rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -559,6 +562,9 @@ p {
 }
 .shrink-0 {
   flex-shrink: 0;
+}
+.list-disc {
+  list-style-type: disc;
 }
 .columns-3 {
   -moz-columns: 3;

@@ -1,0 +1,10 @@
+<div>
+    <h3 class="text-4xl uppercase"> Faq's </h3>
+
+    {% for item in page.faqs %}
+    <div class="flex justify-between border-t-2 last:border-b-2 py-8 uppercase">
+        <h4 class="m-0"> {{ item.question }} </h4>
+        <p class="m-0"> {{ item.answer }} </p>
+    </div>
+    {% endfor %}
+</div>

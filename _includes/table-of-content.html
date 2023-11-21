@@ -1,10 +1,10 @@
 <section class="p-10p">
     <!------ This is our max width div ------>
     <div class="max-w-screen-2xl">
-        <h3 class="text-center uppercase pb-8 text-4xl editable"> {{page.upcoming-travel.title}} </h3>
-
         <!------ This is grid div ------>
         <div class="grid grid-cols-2">
+
+            <!------ This is div with the different pages displayed ------>
             <div>
                 <h3 class="text-4xl uppercase">{{ page.table-title }} </h3>
 
@@ -16,13 +16,16 @@
                 {% endfor %}
             </div>
 
+            <!------ This is the list div ------>
             <div class="mx-auto">
                 <h3 class="text-4xl uppercase">{{ page.list-title }} </h3>
-                <ul>
+            
                 {% for item in page.list %}
+                <ul class="list-disc">
                     <li> {{ item.text }} </li>
-                {% endfor %}
                 </ul>
+                {% endfor %}
+    
             </div>
         </div>
     </div>

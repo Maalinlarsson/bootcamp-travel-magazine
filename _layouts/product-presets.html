@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<!--------------------------- This is the split banner on the top of the page --------------------------->
+{% include split-banner.html %}
+
+<!--------------------------- Before and after --------------------------->
+<section class="p-5p pb-0">
+    <div class="max-w-screen-2xl grid grid-cols-2 items-center">
+        <div>
+            <img src="{{ page.before-after-images[0].image }}" alt="{{ page.before-after-images[0].alt }}" class="aspect-video w-full object-cover">
+
+            <div class="grid grid-cols-6 gap-4 mt-[1rem]">
+                {% for items in page.before-after-images %}
+                <img src="{{ items.image }}" alt="">
+                {% endfor %}
+                
+            </div>
+        </div>
+
+        <div class="p-15p">
+            <h2 class="uppercase"> Before & after </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+    </div>
+</section>
+
+<!--------------------------- How to use your presets --------------------------->
+<section class="p-5p pb-0">
+    <div class="max-w-screen-2xl grid grid-cols-2 items-center">
+        <div class="p-15p">
+            
+              <!------ This is the list div ------>
+              <div class="mx-auto">
+                <h3 class="text-4xl uppercase">{{ page.list-title }} </h3>
+            
+                {% for item in page.list %}
+                <ul class="list-disc">
+                    <li> {{ item.text }} </li>
+                </ul>
+                {% endfor %}
+    
+            </div>
+        </div>
+        <div>
+            <img src="/images/blog-bg-3.jpg" alt="" class="aspect-video w-full object-cover">
+        </div>
+    </div>
+</section>
+
+<!--------------------------- Faq's --------------------------->
+<section class="p-5p">
+    {% include faqs.html %}
+</section>
