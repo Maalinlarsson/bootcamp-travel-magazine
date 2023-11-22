@@ -2,12 +2,21 @@
 layout: default
 hero-banner:
   banner-image: '/images/blog-bg-17.jpg'
+  banner-position: 2% 40%
   top-text:
   big-text: Members Area
   description: Welcome to our private members area.
   button-url:
   button-text:
   button-color:
+sticky-nav-title: Explore
+sticky:
+  - nav-text: 
+  - nav-text:
+  - nav-text:
+  - nav-text:
+  - nav-text:
+  - nav-text:
 seo:
   title: Travel magazine
   description: "your description goes here"
@@ -17,4 +26,16 @@ seo:
 ---
 
 <!--------------------------- This is the banner on the top of the page --------------------------->
-{% include image-banner.html %}
+{% include hero-banner.html %}
+
+<!---------------------------  --------------------------->
+<section class="p-5p">
+  <div class="max-screeen-2xl flex flex-col">
+    <div>
+      <h3> {{ page.sticky-nav-title }} </h3>
+      <nav class="sticky">
+        <a href="{{ item.url }} "> {{ page.sticky.nav-text }} </a>
+      </nav>
+    </div>
+  </div>
+</section>

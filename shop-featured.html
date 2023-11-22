@@ -12,7 +12,8 @@ banner:
 block-image:
   image: /images/blog-bg-8.jpg
   position: 50% 50%
-  text: Once you get a taste for travel you'll never be the same 
+  text: Once you get a taste for travel you'll never be the same
+
 seo:
   title: Travel magazine
   description: "your description goes here"
@@ -27,7 +28,7 @@ seo:
 
         <div class="grid grid-cols-3 gap-6">
           {% for item in site.products-guides limit:3 %}
-            {% include guide-loop.html %}
+            {% include guide-loop.html aspect='0.8' %}
           {% endfor %}
         </div>
     </div>
@@ -43,7 +44,7 @@ seo:
 
       <div class="grid grid-cols-3 gap-6">
         {% for item in site.products-presets limit:3 %}
-          {% include preset-loop.html %}
+          {% include preset-loop.html aspect='0.8' %}
         {% endfor %}
       </div>
   </div>

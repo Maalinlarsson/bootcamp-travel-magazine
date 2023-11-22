@@ -460,6 +460,9 @@ p {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .-right-3 {
   right: -0.75rem;
 }
@@ -557,6 +560,12 @@ p {
 .min-h-\[30vw\] {
   min-height: 30vw;
 }
+.min-h-100 {
+  min-height: 100vh;
+}
+.min-h-50 {
+  min-height: 50vh;
+}
 .w-96 {
   width: 24rem;
 }
@@ -603,6 +612,9 @@ p {
 }
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
 }
 .items-end {
   align-items: flex-end;

@@ -32,11 +32,11 @@ seo:
 
       <div class="grid grid-cols-3 gap-6">
         {% for item in site.products-guides %}
-          {% include guide-loop.html %}
+          {% include guide-loop.html aspect='0.8' %}
         {% endfor %}
 
         {% for item in site.products-presets %}
-          {% include preset-loop.html %}
+          {% include preset-loop.html aspect='0.8' %}
         {% endfor %}
       </div>
   </div>
