@@ -33,12 +33,21 @@ layout: default
         <div class="grid grid-cols-3 gap-6">
           {% assign counter = 0 %}
           {% for item in site.products-guides %}
-          {% if page.url == item.url %}
-          <!-- do nothing -->
-          {% elsif counter < 3 %}
-            {% include guide-loop.html aspect='1.8' %}
-            {% assign counter = counter | plus:1 %}
+
+            <!-- If the page.url is the same as the page we're on -->
+            {% if page.url == item.url %} 
+            <!-- Do nothing, don't output the guide -->
+
+            <!-- If page.url is not the same as item.url (the page were on) output it on the related post but stop at 3 -->
+            {% elsif counter < 3 %}
+                {% include guide-loop.html aspect='1.8' %}
+                
+                <!-- Add one to the counter so that it knows how many we have already published -->
+                {% assign counter = counter | plus:1 %}
             {% endif %}
+
+            <!-- Then continue with the loop unless already 3 items -->
+
           {% endfor %}
         </div>
     </div>
