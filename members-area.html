@@ -10,13 +10,14 @@ hero-banner:
   button-text:
   button-color:
 sticky-nav-title: Explore
-sticky:
-  - nav-text: 
-  - nav-text:
-  - nav-text:
-  - nav-text:
-  - nav-text:
-  - nav-text:
+sticky-nav:
+  - nav-text: Ut enim ad minim veniam
+  - nav-text: Quis nostrud exercitation
+  - nav-text: Laboris nisi ut aliquip
+  - nav-text: Commodo consequat 
+  - nav-text: Duis aute irure dolor in 
+  - nav-text: Reprehenderit in voluptate
+  - nav-text: Ut enim ad minim veniam 
 seo:
   title: Travel magazine
   description: "your description goes here"
@@ -33,8 +34,10 @@ seo:
   <div class="max-screeen-2xl flex flex-col">
     <div>
       <h3> {{ page.sticky-nav-title }} </h3>
-      <nav class="sticky">
-        <a href="{{ item.url }} "> {{ page.sticky.nav-text }} </a>
+      <nav class="">
+        {% for item in page.sticky-nav %}
+        <a href="{{ item.url }} " class="block"> {{ item.text }} </a>
+        {% endfor %}
       </nav>
     </div>
   </div>
