@@ -454,14 +454,71 @@ p {
   --tw-text-opacity: 1;
   color: rgb(87 83 78 / var(--tw-text-opacity));
 }
+.button {
+  display: inline-block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+/*--------------------------- Membeberspace form ---------------------------*/
+/*------ This is the text above the textarea ------*/
+#section-memberspace-login-form #memberspace-login-form ms-typography {
+  border-width: 0px;
+  border-bottom-width: 2px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+/*------ This is the textarea where you write ------*/
+#section-memberspace-login-form #memberspace-login-form input {
+  border-width: 0px;
+  border-bottom-width: 2px;
+}
+/*------ This is the small 'forgot your password/email' text  ------*/
+#section-memberspace-login-form #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-link {
+  font-family: Italiana, serif;
+  --tw-text-opacity: 1;
+  color: rgb(168 162 158 / var(--tw-text-opacity));
+  text-decoration-line: none;
+  text-decoration-thickness: 0px;
+}
+#section-memberspace-login-form #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(28 25 23 / var(--tw-text-opacity));
+}
+/*------ This is the big login button ------*/
+#section-memberspace-login-form #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+  margin-top: 0.75rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(87 83 78 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(120 113 108 / var(--tw-text-opacity));
+}
+#section-memberspace-login-form #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(168 162 158 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 162 158 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .absolute {
   position: absolute;
 }
 .relative {
   position: relative;
-}
-.sticky {
-  position: sticky;
 }
 .-right-3 {
   right: -0.75rem;
@@ -475,6 +532,9 @@ p {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
 .m-0 {
   margin: 0px;
 }
@@ -484,15 +544,15 @@ p {
 .m-4 {
   margin: 1rem;
 }
-.m-\[1rem\] {
-  margin: 1rem;
-}
-.m-2 {
-  margin: 0.5rem;
+.m-auto {
+  margin: auto;
 }
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.mb-0 {
+  margin-bottom: 0px;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -515,9 +575,6 @@ p {
 .mt-\[1rem\] {
   margin-top: 1rem;
 }
-.mb-0 {
-  margin-bottom: 0px;
-}
 .block {
   display: block;
 }
@@ -536,20 +593,8 @@ p {
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-.aspect-portrait {
-  aspect-ratio: 3 / 4;
-}
-.aspect-portrait-tall {
-  aspect-ratio: 3 / 5;
-}
-.aspect-landscape {
-  aspect-ratio: 2 / 1 ;
-}
-.aspect-\[30vw\] {
-  aspect-ratio: 30vw;
+.min-h-100 {
+  min-height: 100vh;
 }
 .min-h-60 {
   min-height: 60vh;
@@ -557,23 +602,23 @@ p {
 .min-h-70 {
   min-height: 70vh;
 }
+.min-h-80 {
+  min-height: 80vh;
+}
 .min-h-\[20vw\] {
   min-height: 20vw;
 }
 .min-h-\[30vw\] {
   min-height: 30vw;
 }
-.min-h-100 {
-  min-height: 100vh;
-}
-.min-h-50 {
-  min-height: 50vh;
-}
 .w-96 {
   width: 24rem;
 }
 .w-full {
   width: 100%;
+}
+.max-w-4xl {
+  max-width: 56rem;
 }
 .max-w-\[300px\] {
   max-width: 300px;
@@ -584,11 +629,8 @@ p {
 .max-w-screen-2xl {
   max-width: 1536px;
 }
-.max-w-7xl {
-  max-width: 80rem;
-}
-.max-w-4xl {
-  max-width: 56rem;
+.max-w-sm {
+  max-width: 24rem;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -616,9 +658,6 @@ p {
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
-.flex-col {
-  flex-direction: column;
-}
 .items-end {
   align-items: flex-end;
 }
@@ -630,6 +669,9 @@ p {
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-3 {
   gap: 0.75rem;
@@ -643,9 +685,6 @@ p {
 .gap-8 {
   gap: 2rem;
 }
-.gap-2 {
-  gap: 0.5rem;
-}
 .self-center {
   align-self: center;
 }
@@ -654,6 +693,12 @@ p {
 }
 .border-b {
   border-bottom-width: 1px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .border-t-2 {
   border-top-width: 2px;
@@ -665,6 +710,10 @@ p {
 .border-current {
   border-color: currentColor;
 }
+.border-stone-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(231 229 228 / var(--tw-border-opacity));
+}
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -673,10 +722,6 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -684,10 +729,6 @@ p {
 .bg-green-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
-}
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 .bg-stone-100 {
   --tw-bg-opacity: 1;
@@ -705,14 +746,6 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
 .bg-cover {
   background-size: cover;
 }
@@ -722,6 +755,9 @@ p {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.p-10p {
+  padding: 10%;
 }
 .p-15p {
   padding: 15%;
@@ -740,9 +776,6 @@ p {
 }
 .p-8 {
   padding: 2rem;
-}
-.p-10p {
-  padding: 10%;
 }
 .px-2 {
   padding-left: 0.5rem;
@@ -786,6 +819,9 @@ p {
 .pb-120p {
   padding-bottom: 120%;
 }
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
 .pb-5p {
   padding-bottom: 5%;
 }
@@ -804,11 +840,8 @@ p {
 .pt-0 {
   padding-top: 0px;
 }
-.pr-5p {
-  padding-right: 5%;
-}
-.pb-100p {
-  padding-bottom: 100%;
+.text-left {
+  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -832,10 +865,6 @@ p {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 .uppercase {
   text-transform: uppercase;
@@ -878,4 +907,5 @@ p {
   .md\:p-10p {
     padding: 10%;
   }
-}
+}   
+

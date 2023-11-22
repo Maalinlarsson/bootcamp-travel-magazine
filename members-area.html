@@ -9,15 +9,22 @@ hero-banner:
   button-url:
   button-text:
   button-color:
-sticky-nav-title: Explore
-sticky-nav:
-  - nav-text: Ut enim ad minim veniam
-  - nav-text: Quis nostrud exercitation
-  - nav-text: Laboris nisi ut aliquip
-  - nav-text: Commodo consequat 
-  - nav-text: Duis aute irure dolor in 
-  - nav-text: Reprehenderit in voluptate
-  - nav-text: Ut enim ad minim veniam 
+members-content-title: Explore
+members-content:
+  - title: Ut enim ad minim veniam
+    content_html: some content
+  - title: Quis nostrud exercitation
+    content_html: some content
+  - title: Laboris nisi ut aliquip
+    content_html: some content
+  - title: Commodo consequat 
+    content_html: some content
+  - title: Duis aute irure dolor in
+    content_html: some content
+  - title: Reprehenderit in voluptate
+    content_html: some content
+  - title: Ut enim ad minim veniam
+    content_html: some content
 seo:
   title: Travel magazine
   description: "your description goes here"
@@ -30,15 +37,23 @@ seo:
 {% include hero-banner.html %}
 
 <!---------------------------  --------------------------->
-<section class="p-5p">
-  <div class="max-screeen-2xl flex flex-col">
-    <div>
-      <h3> {{ page.sticky-nav-title }} </h3>
-      <nav class="">
-        {% for item in page.sticky-nav %}
-        <a href="{{ item.url }} " class="block"> {{ item.text }} </a>
+<section class="p-5p min-h-80 grid grid-cols-4">
+  <div class="cols-span-1">
+    <h3 class="uppercase"> {{ page.members-content-title }} </h3>
+    {% for item in page.members-content %}
+      <a href="#{{ item.title | slugify }}" class="block"> {{ item.title }} </a>
         {% endfor %}
-      </nav>
-    </div>
   </div>
+
+  <div class="col-span-3">
+    {% for item in page.members-content %}
+    <div id="{{item.title | slugify}}" class="p-5p border-b-2 border-black"> 
+      {{ item.content_html }}
+    </div>
+    {% endfor %}
+  </div> 
 </section>
+
+
+    
+  
