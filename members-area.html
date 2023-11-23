@@ -38,7 +38,7 @@ seo:
 
 <!--------------------------- This is the locked pages for members --------------------------->
 <section class="p-5p min-h-80 grid grid-cols-4">
-  <div class="cols-span-1 sticky">
+  <div class="cols-span-1 sticky top-8 self-start">
     <h3 class="uppercase"> {{ page.members-content-title }} </h3>
     {% for item in page.members-content %}
       <a href="#{{ item.title | slugify }}" class="block"> {{ item.title }} </a>
