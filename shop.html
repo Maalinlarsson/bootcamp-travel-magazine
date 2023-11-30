@@ -32,23 +32,13 @@ seo:
 
       <div class="grid grid-cols-3 gap-6">
         {% for item in site.products-guides %}
-          {% include guide-loop.html aspect='0.8' %}
+          {% include guide-loop.html type="guide" aspect='0.8' %}
         {% endfor %}
 
         {% for item in site.products-presets %}
-          {% include preset-loop.html aspect='0.8' %}
+          {% include preset-loop.html type="preset" aspect='0.8' %}
         {% endfor %}
       </div>
   </div>
 </section>
-
-<!--------------------------- You use this way if you are just using one products include instead of making seperate includes for all the categorys --------------------------->
-      
-        <!-- {% for item in site.products-guides %}
-          {% include products.html type="guides" %}
-        {% endfor %}
-
-      {% for item in site.products-presets %}
-        {% include products.html type="presets" %}
-      {% endfor %} -->
 
