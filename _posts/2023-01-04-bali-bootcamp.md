@@ -4,6 +4,7 @@ title: Bali Bootcamp travel time
 description: "This is a short description of the third blog post"
 featured-image: '/images/blog-bg-13.jpg'
 author: Malin
+featured: true
 banner:
   banner-image: '/images/blog-bg-13.jpg'
   top-text:

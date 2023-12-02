@@ -4,6 +4,7 @@ title: Third Blog Post
 description: "This is a short description of the third blog post"
 featured-image: '/images/blog-bg-14.jpg'
 author: Your Name
+featured: false
 banner:
   banner-image: '/images/blog-bg-14.jpg'
   top-text:

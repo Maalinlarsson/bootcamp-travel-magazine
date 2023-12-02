@@ -4,6 +4,7 @@ title: Winter wonderland
 description: "This is a short description of the second blog post"
 featured-image: '/images/blog-bg-5.jpg'
 author: Marita
+featured: false
 banner:
   banner-image: '/images/blog-bg-5.jpg'
   top-text:

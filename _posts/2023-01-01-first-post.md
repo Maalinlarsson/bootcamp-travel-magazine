@@ -4,6 +4,7 @@ title: First Blog Post
 description: "This is a short description of the first blog post"
 featured-image: '/images/blog-bg-4.jpg'
 author: Your Name
+featured: true
 banner:
   banner-image: '/images/blog-bg-4.jpg'
   top-text:

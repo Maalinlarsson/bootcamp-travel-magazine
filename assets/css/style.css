@@ -581,11 +581,26 @@ p {
 .mt-\[1rem\] {
   margin-top: 1rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .line-clamp-4 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+}
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .block {
   display: block;
@@ -626,6 +641,18 @@ p {
 .min-h-\[30vw\] {
   min-height: 30vw;
 }
+.min-h-\[25vw\] {
+  min-height: 25vw;
+}
+.min-h-\[10\%\] {
+  min-height: 10%;
+}
+.min-h-\[20\%\] {
+  min-height: 20%;
+}
+.min-h-\[100\%\] {
+  min-height: 100%;
+}
 .w-96 {
   width: 24rem;
 }
@@ -646,6 +673,9 @@ p {
 }
 .max-w-sm {
   max-width: 24rem;
+}
+.max-w-xs {
+  max-width: 20rem;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -861,11 +891,23 @@ p {
 .pt-0 {
   padding-top: 0px;
 }
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+.pb-4 {
+  padding-bottom: 1rem;
+}
 .text-left {
   text-align: left;
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.font-serif {
+  font-family: Italiana, serif;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -887,8 +929,33 @@ p {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-\[10vw\] {
+  font-size: 10vw;
+}
+.text-\[14vw\] {
+  font-size: 14vw;
+}
+.text-\[12vw\] {
+  font-size: 12vw;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .uppercase {
   text-transform: uppercase;
+}
+.leading-\[0\.9\] {
+  line-height: 0.9;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 .text-stone-400 {
   --tw-text-opacity: 1;
@@ -897,6 +964,9 @@ p {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.underline-offset-2 {
+  text-underline-offset: 2px;
 }
 
 /*--------------------------- Default styles to apply to the whole project ---------------------------*/
@@ -920,6 +990,11 @@ p {
 .hover\:text-stone-200:hover {
   --tw-text-opacity: 1;
   color: rgb(231 229 228 / var(--tw-text-opacity));
+}
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 @media (min-width: 768px) {
   .md\:flex {

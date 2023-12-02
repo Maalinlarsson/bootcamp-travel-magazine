@@ -4,6 +4,7 @@ title: Sweden, Norway or somewhere else?
 description: "This is a short description of the third blog post"
 featured-image: '/images/blog-bg-1.jpg'
 author: Malin
+featured: false
 banner:
   banner-image: '/images/blog-bg-1.jpg'
   top-text:

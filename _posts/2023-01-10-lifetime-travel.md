@@ -4,6 +4,7 @@ title: Lifetime travel
 description: "This is a short description of the second blog post"
 featured-image: '/images/blog-bg-6.jpg'
 author: Larsson's
+featured: false
 banner:
   banner-image: '/images/blog-bg-6.jpg'
   top-text:

@@ -4,6 +4,7 @@ title: Warmer weather
 description: "This is a short description of the third blog post"
 featured-image: '/images/blog-bg-7.jpg'
 author: Malin
+featured: false
 banner:
   banner-image: '/images/blog-bg-7.jpg'
   top-text:
